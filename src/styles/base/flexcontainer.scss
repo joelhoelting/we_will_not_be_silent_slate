@@ -1,0 +1,17 @@
+// Styling for Home Page Logo
+
+.flexcontainer {
+  align-items: center;
+  display: flex;
+  height: 85vh;
+  margin: 0 auto;
+  width: 90%;
+  @media (min-width: 1050px) {
+  	height: 100vh;
+    width: 50%;
+  }
+}
+
+.flexcontainer > div {
+  flex: 1 0 auto;
+}

@@ -1,0 +1,61 @@
+div#contact {
+  padding-top: 30px;
+  h3 {
+    @media (max-width: 400px) {
+      font-size: 1.2rem;
+    }
+  }
+  @media (min-width: 1050px) {
+    width: 50%;
+  }
+  form {
+    font-size: 1.2rem;
+    @media (min-width: 1050px) {
+      font-size: 1.6rem;
+    }
+    input {
+      margin: 5px 0;
+      width: 100%;
+      border-radius: 0;
+      padding: 0;
+    }
+    textarea {
+      padding: 0;
+      border-radius: 0;
+      margin: 5px 0;
+      width: 100%;
+      resize: none;
+      height: 8em;
+      @media (min-width: 400px) {
+        height: 10em;
+      }
+      @media (min-width: 1050px) {
+        height: 12em;
+      }
+    }
+    button {
+      display: block;
+      padding: 5px 0;
+      width: 100%;
+      margin: 0 auto;
+      border: 5px solid white;
+      border-radius: 2px;
+      font-family: $secondary-font-family;
+      font-weight: bold;
+      background: $primary-color;
+      color: $secondary-color;
+      text-decoration: none;
+      cursor: pointer;
+      &:hover {
+        color: black;
+        background: #fff;
+      }
+    }
+  }
+  #address {
+    margin: 30px 0;
+    @media (min-width: 1050px) {
+      font-size: 2rem;
+    }
+  }
+}

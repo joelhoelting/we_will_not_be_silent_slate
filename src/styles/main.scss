@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/*============================================================================
+  [replace with theme name] | Built with Slate
+    - You cannot use native CSS/Sass @imports in this file without a build script
+==============================================================================*/
+
+/*================ UTILS ================*/
+@import url('tools/mixins.scss');
+
+/*================ Variables ================*/
+@import url('variables/variables.scss');
+
+/*================ COMMON ================*/
+@import url('vendor/normalize.scss');
+@import url('base/_module.scss');
+@import url('sections/_module.scss');
+@import url('pages/_module.scss');

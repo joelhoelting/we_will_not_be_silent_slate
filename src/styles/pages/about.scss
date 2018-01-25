@@ -1,0 +1,47 @@
+div#about-image {
+  background-image: url('claim_power-min.jpg');
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  @media (min-width: 1050px) {
+    background-image: url('claim_power_desktop-min.jpg');
+  }
+}
+#about {
+  padding: 20px 0;
+  p {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  h3 {
+    margin: 20px 0;
+    @media (min-width: 1050px) {
+      font-size: 2rem;
+    }
+  }
+  @media (min-width: 1050px) {
+    p {
+      font-size: 1.6rem;
+      margin: 20px 0;
+    }
+  }
+  #revealHistory {
+    @media (min-width: 1050px) {
+      font-size: 2rem;
+    }
+  }
+  #history {
+    padding: 20px 0 600px 0;
+    @media (min-width: 1050px) {
+      padding: 20px 0 800px 0;
+    }
+  }
+  #far-and-wide {
+    padding-top: 40px;
+  }
+}

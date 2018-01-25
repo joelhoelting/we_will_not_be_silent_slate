@@ -1,0 +1,68 @@
+div#donate-image {
+  background-image: url('dare_to_imagine-min.jpg');
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  @media (min-width: 1050px) {
+    background-image: url('dare_to_imagine_desktop-min.jpg');
+  }
+}
+#donate {
+  padding: 30px 0 600px 0;
+  @media (min-width: 1050px) {
+    padding: 30px 0 1000px 0;
+  }
+  p {
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: .8rem;
+  }
+  h3 {
+    margin: 20px 0;
+    @media (max-width: 400px) {
+      font-size: .9rem;
+    }
+  }
+
+  @media (min-width: 1050px) {
+    p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+    }
+    h3 {
+      font-size: 1.6rem;
+    }
+  }
+  input[type="submit"] {
+    display: block;
+    margin: 20px auto;
+    padding: 5px 0;
+    width: 100%;
+    border: 5px solid white;
+    border-radius: 2px;
+    font-size: 2rem;
+    font-family: $secondary-font-family;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.2);
+    color: $secondary-color;
+    text-decoration: none;
+    cursor: pointer;
+    @media (min-width: 1050px) {
+      font-size: 3rem;
+      padding: 10px 0;
+      &:hover {
+        background: $secondary-color;
+        color: $primary-color;
+      }
+    }
+    span {
+      font-family: $secondary-font-family;
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+#product-container {
+	margin: 60px auto 0;
+	width: 90%;
+	@media (min-width: 1050px) {
+    width: 50%;
+		margin: 100px auto 0;
+  }
+	p {
+		font-size: .8rem;
+		margin: 20px 0;
+		font-weight: bold;
+		@media (min-width: 1050px) {
+	    font-size: 1.2rem;
+	  }
+	}
+	label {
+		font-weight: bolder;
+		font-size: 1.1rem;
+		@media (min-width: 1050px) {
+	    font-size: 1.4rem;
+	  }
+	}
+	select {
+		width:150px;
+		float: right;
+		font-weight: bolder;
+		@media (min-width: 1050px) {
+	    width:200px;
+	  }
+	}
+	#image-1 {
+		img {
+			padding: 50px 0;
+			max-width: 100%;
+		}
+	}
+	#ethics-2 {
+		margin: 0 auto;
+	}
+	#price-3 {
+		h1 {
+			margin: 0 .5em;
+			font-size: 2rem;
+			@media (min-width: 1050px) {
+		    font-size: 3rem;
+		  }
+		}
+	}
+	#size-info-4 {
+		margin: 0 auto;
+		h3#sizing {
+			margin: 50px 0 20px 0;
+		}
+	}
+	button {
+    display: block;
+    margin: 20px auto;
+    padding: 5px 0;
+    width: 100%;
+    border: 5px solid white;
+    border-radius: 2px;
+    font-size: 2rem;
+    font-family: $primary-font-family;
+    background: $primary-color;
+    color: $secondary-color;
+    text-decoration: none;
+		cursor: pointer;
+    @media (min-width: 1050px) {
+      font-size: 4rem;
+			&:hover {
+				color: black;
+				background: white;
+			}
+    }
+    span {
+      font-family: $secondary-font-family;
+      font-weight: 700;
+    }
+  }
+}

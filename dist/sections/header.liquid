@@ -1,0 +1,49 @@
+<div id="mobile-navbar">
+  <div id="page-title">
+    <h3 id="title"><a href="/">WE WILL NOT BE SILENT</a></h3>
+  </div>
+  <div id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<div id="mobile-navmenu-overlay" class="hide">
+  <h2><a href="/">WE WILL NOT BE SILENT</a></h2>
+  <div id="nav-close">
+    <span></span>
+    <span></span>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="/collections/current">MESSAGES</a></li>
+      <li><a href="/pages/images">IMAGES</a></li>
+      <li><a href="/pages/about">ABOUT</a></li>
+      <li><a href="/pages/donate">DONATE</a></li>
+      <li><a href="/pages/contact">CONTACT</a></li>
+      {% if cart.item_count > 0 %}
+        <li><a href="/cart">CART</a></li>
+      {% endif %}
+      <li id="nav-footer">
+        <a href="https://www.facebook.com/WeWillNotBeSilent" target="_blank">{% include 'icon-facebook' %}</a>
+        <a href="https://twitter.com/GREEDKILLS" target="_blank">{% include 'icon-twitter' %}</a>
+        <a href="https://instagram.com/WEWILLNOTBESILENT" target="_blank">{% include 'icon-instagram' %}</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<div id="desktop-navbar">
+  <ul>
+    <li><a href="/">HOME</a></li>
+    <li><a href="/collections/current">EMBODY THE MESSAGE</a></li>
+    <li><a href="/pages/images">IMAGES</a></li>
+    <li><a href="/pages/contact">CONTACT</a></li>
+    <li><a href="/pages/about">ABOUT</a></li>
+    <li><a href="/pages/donate">DONATE</a></li>
+    {% if cart.item_count > 0 %}
+      <li><a href="/cart">CART</a></li>
+    {% endif %}
+  </ul>
+</div>

@@ -1,0 +1,44 @@
+#cart {
+  padding-bottom: 20px;
+	@media (min-width: 1050px) {
+    width: 50%;
+    margin: 100px auto;
+    font-size: 2rem;
+  }
+  tr, td {
+  	font-weight: bolder;
+  }
+  a#title-link {
+  	font-size: 1.2rem;
+  }
+	label {
+		font-weight: bold;
+		font-size: .8rem;
+	}
+  input[name="updates[]"] {
+  	width: 40px;
+  	font-weight: bold;
+  }
+	#subtotal {
+		p {
+			font-size: 1rem;
+			font-weight: bold;
+		}
+	}
+	#inputs {
+		text-align: center;
+		input {
+	  	font-family: $secondary-font-family;
+	  	border-radius: 4px;
+	  	color: $primary-color;
+	  	background: $secondary-color;
+	  	font-weight: bold;
+	  	font-size: 1.2rem;
+			margin: 20px 0;
+	  	padding: 1%;
+	  	width: 49%;
+			display:inline-block;
+	  }
+	}
+
+}

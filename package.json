@@ -1,0 +1,11 @@
+{
+  "name": "we_will_not_be_silent_slate",
+  "version": "0.0.1",
+  "devDependencies": {
+    "@shopify/slate-tools": "0.13.0",
+    "dotenv": "^4.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0"
+  }
+}
