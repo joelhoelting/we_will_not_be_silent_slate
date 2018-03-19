@@ -2,10 +2,11 @@ footer {
   position: absolute;
   text-align: center;
   left: 0;
-  bottom: 0;
+  bottom: 20px;
   height: 100px;
   width: 100%;
   z-index: 1;
+  margin: 0;
   @media (min-width: 1050px) {
     height: 120px;
   }

@@ -15,7 +15,7 @@
 
 development:
   password: 617d974f4c566bc8eb82feb5673f83d9
-  theme_id: 6391332904
+  theme_id: 7270301736
   store: wewillnotbesilent.myshopify.com
   ignore_files:
     #- settings_data.json # Uncomment this line to avoid resetting theme settings
