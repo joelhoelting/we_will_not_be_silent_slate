@@ -17,7 +17,23 @@ div#messages-image {
     padding-top: 120px;
     width: 80%;
   }
-  ul{
+
+  #search-products {
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    font-family: arial;
+    color: white;
+    border-bottom: 1px solid white;
+    margin: 1em 0;
+    max-width: 150px;
+    @media (min-width: 1050px) {
+      font-size: 30px;
+      max-width: 300px;
+    }
+  }
+
+  ul {
     li {
       list-style: none;
       font-weight: bold;

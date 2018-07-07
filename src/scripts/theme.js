@@ -20,6 +20,7 @@ window.theme = window.theme || {};
 // =require modules/title.js
 // =require modules/about.js
 // =require modules/images.js
+// =require modules/products.js
 
 /*================ Templates ================*/
 // =require templates/customers-addresses.js

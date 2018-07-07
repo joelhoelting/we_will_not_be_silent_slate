@@ -1,6 +1,7 @@
 #product-container {
 	margin: 60px auto 0;
 	width: 90%;
+	max-width: 1000px;
 	@media (min-width: 1050px) {
     width: 50%;
 		margin: 100px auto 0;

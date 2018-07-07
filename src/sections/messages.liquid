@@ -1,15 +1,17 @@
 <div id="messages-image"></div>
-
 <div id="messages">
-  <ul>
-    {% assign collection = collections.current %}
-    {% paginate collection.products by 40 %}
-      {% for product in collection.products %}
-        <li><a href="{{ product.url }}">{{ product.title }}</a></li>
-      {% endfor %}
-      <div id="paginate">
-      	{{ paginate | default_pagination }}
-      </div>
-    {% endpaginate %}
-  </ul>
+  <input type="text" name="search-products" id="search-products" placeholder="FIND A MESSAGE..." disabled>
+  <div id="list">
+    <ul>
+      {% assign collection = collections.current %}
+      {% paginate collection.products by 40 %}
+        {% for product in collection.products %}
+          <li><a href="{{ product.url }}">{{ product.title }}</a></li>
+        {% endfor %}
+        <div id="paginate">
+          {{ paginate | default_pagination }}
+        </div>
+      {% endpaginate %}
+    </ul>
+  </div>
 </div>
