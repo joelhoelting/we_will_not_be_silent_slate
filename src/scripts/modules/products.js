@@ -1,51 +1,51 @@
 (function () {
-	var products = {
-		init: function() {
+  var products = {
+    init: function () {
       this.fetchProducts();
       this.cacheDom();
       this.cacheVariables();
       this.bindEvents();
-		},
-		cacheDom: function () {
+    },
+    cacheDom: function () {
       this.$searchInput = $('#search-products');
       this.$list = $('#list ul');
     },
-    cacheVariables: function() {
+    cacheVariables: function () {
       this.originalList = this.$list.html();
     },
     bindEvents: function () {
       var originalThis = this;
       // this.$searchInput.on('change', this.displayMatches);
-      this.$searchInput.on('keyup', function(event) {
+      this.$searchInput.on('keyup', function (event) {
         originalThis.displayMatches(event);
       });
     },
-    displayMatches: function(event) {
+    displayMatches: function (event) {
       if (event.target.value <= 1) {
         this.$list.html(this.originalList);
         return;
       }
-      
+
       var matchArray = this.findMatches(event.target.value);
       console.log(matchArray);
 
       const searchedProducts = matchArray.map(product => {
         return `
           <li>
-           <a href='/products/${product.url}'>${product.title}</a>
+           <a href='/products/${product.handle}'>${product.title}</a>
           </li>
         `;
       }).join('');
       this.$list.html(searchedProducts);
     },
-    findMatches: function(wordToMatch) {
+    findMatches: function (wordToMatch) {
       return this.allProducts.filter(product => {
         const regex = new RegExp(wordToMatch, 'gi');
-        return product.title.match(regex);
+        return product.handle.match(regex);
       });
     },
-    fetchProducts: function() {
-      var endpoint = 'https://us-central1-we-will-not-be-silent.cloudfunctions.net/getProducts';
+    fetchProducts: function () {
+      var endpoint = 'https://api.joelhoelting.com/shopify/we_will_not_be_silent/collections/15267954728?filter=title&filter=handle';
       fetch(endpoint)
         .then(blob => blob.json())
         .then(data => {
